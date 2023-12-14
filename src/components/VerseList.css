@@ -1,0 +1,33 @@
+.verse-list{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+}
+
+.verse-item {
+    box-sizing: border-box;
+    width: calc(33.333% - 20px);
+    padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+
+.verse-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .verse-item {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .verse-item {
+      width: 100%;
+    }
+  }
