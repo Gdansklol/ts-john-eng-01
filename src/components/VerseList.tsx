@@ -17,7 +17,7 @@ const VerseList: React.FC<VerseListProps> = ({ verses }) => {
   console.log('Rendering VerseList component'); // Add this line for debugging
   return (
     <>
-    <h1>Gospel of John Chapter 1</h1>
+    <h1>The Gospel of John Chapter 1</h1>
     <div className='verse-list'>
     
       {verses.map((verse) => (
