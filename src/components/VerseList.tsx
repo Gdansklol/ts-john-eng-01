@@ -1,3 +1,4 @@
+
 // src/components/VerseList.tsx
 import React from 'react';
 import './VerseList.css';
@@ -32,3 +33,38 @@ const VerseList: React.FC<VerseListProps> = ({ verses }) => {
 };
 
 export default VerseList;
+
+
+
+
+
+// VerseList.tsx
+
+
+// import React from 'react';
+
+// interface VerseListProps {
+//   verses: Array<{
+//     id: number;
+//     title: string;
+//     text: string;
+//   }>;
+// }
+// const VerseList: React.FC<VerseListProps> = ({ verses }) => {
+//   console.log('Rendering VerseList component');
+
+//   return (
+//     <div>
+//       {verses.map((verse, index) => (
+//         <div key={index}>
+//           <h2>{verse.title}</h2>
+//           {/* Byt ut \n med <br /> */}
+//           <p dangerouslySetInnerHTML={{ __html: verse.text.replace(/\n/g, '<br />') }} />
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default VerseList;
+

@@ -4,6 +4,34 @@
  gap: 20px;
 }
 
+h3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    margin-right: 7px;
+
+}
+
+h1,
+h3.verse-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 2px;
+}
+
+p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .verse-item {
     box-sizing: border-box;
     width: calc(33.333% - 20px);
@@ -29,5 +57,13 @@
   @media (max-width: 480px) {
     .verse-item {
       width: 100%;
+    }
+    h1,
+    h3.verse-title {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 2px;
     }
   }
